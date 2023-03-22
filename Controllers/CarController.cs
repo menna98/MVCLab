@@ -6,8 +6,8 @@ namespace MVCLab.Controllers
     {
         public IActionResult GetAll()
         {
-            var cars = Models.Car.GetCars();
-            return View(cars);
+            var cars = Models.Car.GetCars(); //Model
+            return View(cars);               //pass Model to view
         }
     }
 }
