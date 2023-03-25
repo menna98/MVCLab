@@ -7,9 +7,10 @@
         public string? Image { get; set; }
         public string? HtmlDescription { get; set; }
         public DateTime FirstUseDate { get; set; }
-        //Properties can be reused
+        //2 Properties can be reused
         public string Name => $"Name: {Model} from {Manufacturer}";
         public int Duration => DateTime.Now.Year - FirstUseDate.Year;
+        //
         public static List<Car> GetCars()
             => new() {
                 new Car

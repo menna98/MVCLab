@@ -19,7 +19,7 @@
     {
         <li>
             <ul>
-                //<li>@($"Name: {car.Model} from {car.Manufacturer}")</li>
+               @* <li>@($"Name: {car.Model} from {car.Manufacturer}")</li> *@
                 <li>@car.Name</li>
                 <li> @($"usage Duration: {car.Duration} Year")</li>
                 <li>@Html.Raw(@car.HtmlDescription)</li>   
